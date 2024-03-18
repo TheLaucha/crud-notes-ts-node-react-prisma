@@ -9,10 +9,10 @@ import {
 
 const userRoutes = express.Router()
 
-userRoutes.get("/users", getUsers)
-userRoutes.get("/users/:id", getUserById)
-userRoutes.post("/users", createUser)
-userRoutes.patch("/users/:id", updateUser)
-userRoutes.delete("/users/:id", deleteUser)
+userRoutes.get("/", getUsers)
+userRoutes.get("/:id", getUserById)
+userRoutes.post("/", createUser)
+userRoutes.patch("/:id", updateUser)
+userRoutes.delete("/:id", deleteUser)
 
 export default userRoutes

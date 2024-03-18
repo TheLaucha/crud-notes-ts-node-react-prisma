@@ -8,10 +8,10 @@ import {
 } from "../controllers/productController"
 const productRoutes = express.Router()
 
-productRoutes.get("/products", getProducts)
-productRoutes.get("/products/:id", getProductById)
-productRoutes.post("/products", createProduct)
-productRoutes.patch("/products/:id", updateProduct)
-productRoutes.delete("/products/:id", deleteProduct)
+productRoutes.get("/", getProducts)
+productRoutes.get("/:id", getProductById)
+productRoutes.post("/", createProduct)
+productRoutes.patch("/:id", updateProduct)
+productRoutes.delete("/:id", deleteProduct)
 
 export default productRoutes
